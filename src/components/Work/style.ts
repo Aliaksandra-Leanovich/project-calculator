@@ -23,7 +23,7 @@ export const TitleSC = styled.p`
 export const BlocksSC = styled.div`
   display: grid;
   width: 100%;
-  grid-template-columns: repeat(4, 336px);
+  grid-template-columns: repeat(4, 300px);
   row-gap: 66px;
   column-gap: 10px;
 `;
@@ -60,7 +60,7 @@ export const DescriptionBlockSC = styled.p`
 `;
 export const LineSC = styled.div`
   border-bottom: 2px solid #c5c7c9;
-  width: calc(100% + 200px);
+  width: calc(100% + 0px);
 `;
 
 export const LineSecondSC = styled.div`
