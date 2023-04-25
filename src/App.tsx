@@ -1,4 +1,5 @@
 import { Calculation } from "./components/Calculation/Calculation";
+import { ContactUs } from "./components/ContactUs/ContactUs";
 import { Header } from "./components/Header/Header";
 import { StartProject } from "./components/StartProject/StartProject";
 import { Team } from "./components/Team/Team";
@@ -12,6 +13,7 @@ function App() {
       <Calculation />
       <Work />
       <Team />
+      <ContactUs />
     </div>
   );
 }
