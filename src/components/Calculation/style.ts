@@ -77,3 +77,21 @@ export const ProjectContainerSC = styled.div`
   padding-left: 151px;
   margin-bottom: 60px;
 `;
+
+export const ButtonContainerSC = styled.div`
+  display: flex;
+  justify-content: center;
+  width: 100%;
+`;
+
+export const ButtonSC = styled.button`
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 0.015em;
+  padding: 14px 50px;
+  background: #6295f1;
+  color: #ffffff;
+`;

@@ -3,23 +3,42 @@ import Radio from "@mui/material/Radio";
 import RadioGroup from "@mui/material/RadioGroup";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import FormControl from "@mui/material/FormControl";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Progresses } from "./Progresses";
 import { ContainerSC } from "./style";
 
-export const ProjectStage = () => {
+interface IStage {
+  stage: number;
+  setStage: (stage: number) => void;
+}
+
+export const ProjectStage = ({ stage, setStage }: IStage) => {
+  const formControlLabelStyle = {
+    "& .MuiFormControlLabel-label": {
+      fontFamily: "Montserrat",
+      fontWeight: "500",
+      fontSize: "22px",
+      lineHeight: "175%",
+      letterSpacing: "-0.005em",
+      color: " #222529",
+    },
+  };
+
   const [value, setValue] = useState("idea");
-  const [disabled, setDisabled] = useState(false);
+  const [disabled, setDisabled] = useState(true);
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setValue((event.target as HTMLInputElement).value);
   };
-  React.useEffect(() => {
+
+  useEffect(() => {
     if (value === "progress") {
+      setDisabled(false);
+    } else {
       setDisabled(true);
     }
-    console.log(value, disabled);
-  }, [disabled, value]);
+  }, [value]);
+
   return (
     <ContainerSC>
       <FormControl>
@@ -31,23 +50,56 @@ export const ProjectStage = () => {
         >
           <FormControlLabel
             value="idea"
-            control={<Radio />}
+            control={
+              <Radio
+                sx={{
+                  "& .MuiSvgIcon-root": {
+                    color: "#C5C7C9",
+                  },
+                }}
+              />
+            }
             label="I have only idea"
+            sx={{ formControlLabelStyle }}
           />
           <FormControlLabel
             value="mockups"
-            control={<Radio />}
+            control={
+              <Radio
+                sx={{
+                  "& .MuiSvgIcon-root": {
+                    color: "#C5C7C9",
+                  },
+                }}
+              />
+            }
             label="I have only mockups / specification"
           />
           <FormControlLabel
             value="progress"
-            control={<Radio />}
+            control={
+              <Radio
+                sx={{
+                  "& .MuiSvgIcon-root": {
+                    color: "#C5C7C9",
+                  },
+                }}
+              />
+            }
             label="Project is in progress"
           />
-          <Progresses />
+          <Progresses disabled={disabled} stage={stage} setStage={setStage} />
           <FormControlLabel
             value="dont"
-            control={<Radio />}
+            control={
+              <Radio
+                sx={{
+                  "& .MuiSvgIcon-root": {
+                    color: "#C5C7C9",
+                  },
+                }}
+              />
+            }
             label="I don’t know"
           />
         </RadioGroup>

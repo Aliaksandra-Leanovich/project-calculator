@@ -19,4 +19,8 @@ export const LinkSC = styled.a`
   letter-spacing: 0.015em;
 
   color: #3f454c;
+
+  &:hover {
+    color: #2b3687;
+  }
 `;

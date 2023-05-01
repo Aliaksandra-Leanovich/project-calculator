@@ -60,7 +60,7 @@ export const DescriptionBlockSC = styled.p`
 `;
 export const LineSC = styled.div`
   border-bottom: 2px solid #c5c7c9;
-  width: calc(100% + 0px);
+  width: calc(100% + 10px);
 `;
 
 export const LineSecondSC = styled.div`
