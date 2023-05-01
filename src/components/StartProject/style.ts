@@ -46,7 +46,7 @@ export const DescriptionSc = styled.p`
   color: #3f454c;
 `;
 
-export const ButtonStartSC = styled.a`
+export const ButtonStartSC = styled.button`
   background: #6295f1;
   font-weight: 700;
   font-size: 15px;
@@ -56,7 +56,7 @@ export const ButtonStartSC = styled.a`
   color: #ffffff;
 `;
 
-export const ButtoonContactSC = styled.a`
+export const ButtoonContactSC = styled.button`
   border: 2px solid #6295f1;
   padding: 17px 34px;
   font-weight: 700;

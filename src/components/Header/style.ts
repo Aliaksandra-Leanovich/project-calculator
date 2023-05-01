@@ -23,7 +23,7 @@ export const LogoContainerSC = styled.a`
   cursor: pointer;
 `;
 
-export const ButtonSC = styled.a`
+export const ButtonSC = styled.button`
   border: 2px solid #6295f1;
   font-weight: 700;
   font-size: 15px;

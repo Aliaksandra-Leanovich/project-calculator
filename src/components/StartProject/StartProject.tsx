@@ -24,8 +24,8 @@ export const StartProject = () => {
             Engineers with rates from $20 per hour
           </DescriptionSc>
           <ButtonsSC>
-            <ButtonStartSC href="#">Start a Project</ButtonStartSC>
-            <ButtoonContactSC href="#">Contact Us</ButtoonContactSC>
+            <ButtonStartSC disabled>Start a Project</ButtonStartSC>
+            <ButtoonContactSC disabled>Contact Us</ButtoonContactSC>
           </ButtonsSC>
         </DescriptionBlockSC>
         <ImageContainerSC>

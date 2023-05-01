@@ -18,7 +18,7 @@ export const Header = () => {
             <img src={Logo} alt="MIFORT" />
           </LogoContainerSC>
           <Navigation />
-          <ButtonSC href="#">Contact Us</ButtonSC>
+          <ButtonSC disabled>Contact Us</ButtonSC>
         </ContainerSC>
       </WrapperSC>
     </StyledHeaderSC>

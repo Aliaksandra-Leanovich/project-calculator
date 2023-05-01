@@ -64,7 +64,7 @@ export const TitleBlockSC = styled.p`
   font-weight: 700;
 `;
 
-export const ButtonSC = styled.a`
+export const ButtonSC = styled.button`
   background: #6295f1;
   padding: 13px 30px;
   font-weight: 700;

@@ -112,7 +112,7 @@ export const ContactUs = () => {
               <FileIconSC src={File} />
               <FileTextSC>Attach file</FileTextSC>
             </FileBlockSC>
-            <ButtonSC>Send</ButtonSC>
+            <ButtonSC disabled>Send</ButtonSC>
           </FormSC>
           <BlockSC>
             <SocialsBlockSC>

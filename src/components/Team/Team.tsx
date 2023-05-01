@@ -53,7 +53,7 @@ export const Team = () => {
               <TextSc>Ensures that the solution works as expected</TextSc>
             </BlockSc>
           </BlocksSC>
-          <ButtonSC href="#">Request a Specialist</ButtonSC>
+          <ButtonSC disabled>Request a Specialist</ButtonSC>
         </ContainerSC>
       </WrapperSC>
     </BackgroundSC>
